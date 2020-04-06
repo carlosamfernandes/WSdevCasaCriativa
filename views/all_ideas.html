@@ -1,0 +1,30 @@
+{% for idea in ideas %}
+                
+    <div class="idea">
+        <img src="{{idea.image}}" alt="Imagem de curso de {{idea.title}}">
+        <div class="content">
+            <h3>{{idea.title}}</h3>
+            <p>{{idea.category}}</p>
+            <div class="description">
+                {{idea.description}}
+            </div>
+            <a href="{{idea.link}}" target="_blank">Ir para a ideia</a>
+        </div>
+    </div>
+
+{% endfor %}
+
+<!-- como estava antes
+    
+    <div class="idea">
+        <img src="https://image.flaticon.com/icons/svg/2729/2729007.svg" alt="Imagem de curso de programação">
+        <div class="content">
+            <h3>Cursos de Programação</h3>
+            <p>Estudo</p>
+            <div class="description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quia illo corrupti veniam odit cumque nesciunt praesentium blanditiis similique distinctio. Delectus maiores nihil obcaecati provident praesentium sit, voluptate illum asperiores.
+            </div>
+            <a href="#">Ir para a ideia</a>
+        </div>
+    </div>
+-->
